@@ -31,7 +31,7 @@ const Example = () => {
   const [element, setElement] = useLazyload(onIntersectCallback, options);
   return (
     <div>
-      {...items.map(
+      {items.map(
         //...
       )}
       {
