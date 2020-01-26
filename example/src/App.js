@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useLazyload } from 'use-lazyload'
 
 const ROWS_PER_PAGE = 10;
@@ -53,4 +53,5 @@ const App = () => {
     </div>
   )
 }
+
 export default App
