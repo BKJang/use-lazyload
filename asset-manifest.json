@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/use-lazyload/static/css/main.608d28f9.chunk.css",
+    "main.js": "/use-lazyload/static/js/main.eceb67db.chunk.js",
+    "main.js.map": "/use-lazyload/static/js/main.eceb67db.chunk.js.map",
+    "runtime-main.js": "/use-lazyload/static/js/runtime-main.230ce336.js",
+    "runtime-main.js.map": "/use-lazyload/static/js/runtime-main.230ce336.js.map",
+    "static/js/2.99f4bda5.chunk.js": "/use-lazyload/static/js/2.99f4bda5.chunk.js",
+    "static/js/2.99f4bda5.chunk.js.map": "/use-lazyload/static/js/2.99f4bda5.chunk.js.map",
+    "index.html": "/use-lazyload/index.html",
+    "precache-manifest.f440a6225c0f920868f67ebb2cf2252e.js": "/use-lazyload/precache-manifest.f440a6225c0f920868f67ebb2cf2252e.js",
+    "service-worker.js": "/use-lazyload/service-worker.js",
+    "static/css/main.608d28f9.chunk.css.map": "/use-lazyload/static/css/main.608d28f9.chunk.css.map",
+    "static/js/2.99f4bda5.chunk.js.LICENSE": "/use-lazyload/static/js/2.99f4bda5.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.230ce336.js",
+    "static/js/2.99f4bda5.chunk.js",
+    "static/css/main.608d28f9.chunk.css",
+    "static/js/main.eceb67db.chunk.js"
+  ]
+}
