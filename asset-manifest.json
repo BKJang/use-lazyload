@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/use-lazyload/static/css/main.608d28f9.chunk.css",
-    "main.js": "/use-lazyload/static/js/main.159937c6.chunk.js",
-    "main.js.map": "/use-lazyload/static/js/main.159937c6.chunk.js.map",
+    "main.js": "/use-lazyload/static/js/main.bbee4400.chunk.js",
+    "main.js.map": "/use-lazyload/static/js/main.bbee4400.chunk.js.map",
     "runtime-main.js": "/use-lazyload/static/js/runtime-main.230ce336.js",
     "runtime-main.js.map": "/use-lazyload/static/js/runtime-main.230ce336.js.map",
     "static/js/2.55a25cab.chunk.js": "/use-lazyload/static/js/2.55a25cab.chunk.js",
     "static/js/2.55a25cab.chunk.js.map": "/use-lazyload/static/js/2.55a25cab.chunk.js.map",
     "index.html": "/use-lazyload/index.html",
-    "precache-manifest.4eef09eb51b969ec0b8d677204720539.js": "/use-lazyload/precache-manifest.4eef09eb51b969ec0b8d677204720539.js",
+    "precache-manifest.919a7a9eb2df6339f10bcea225f4ef9b.js": "/use-lazyload/precache-manifest.919a7a9eb2df6339f10bcea225f4ef9b.js",
     "service-worker.js": "/use-lazyload/service-worker.js",
     "static/css/main.608d28f9.chunk.css.map": "/use-lazyload/static/css/main.608d28f9.chunk.css.map",
     "static/js/2.55a25cab.chunk.js.LICENSE": "/use-lazyload/static/js/2.55a25cab.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.230ce336.js",
     "static/js/2.55a25cab.chunk.js",
     "static/css/main.608d28f9.chunk.css",
-    "static/js/main.159937c6.chunk.js"
+    "static/js/main.bbee4400.chunk.js"
   ]
 }
