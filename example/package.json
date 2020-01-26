@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "react": "file:../node_modules/react",
+    "react-app-polyfill": "^1.0.5",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.0.1",
     "use-lazyload": "file:.."
