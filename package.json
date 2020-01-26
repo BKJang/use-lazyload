@@ -1,7 +1,7 @@
 {
   "name": "use-lazyload",
   "version": "1.0.0",
-  "description": "custom hooks for lazyloding in react.",
+  "description": "",
   "author": "BKJang",
   "license": "MIT",
   "repository": "BKJang/use-lazyload",
