@@ -1,10 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-
-interface IObserverOptions {
-  root: Element | null;
-  rootMargin: string;
-  thresholds: ReadonlyArray<number>;
-};
+import { getObserver, IObserverOptions } from './utils';
 
 const defaultOptions: IObserverOptions = {
   root: null,
@@ -12,12 +7,13 @@ const defaultOptions: IObserverOptions = {
   thresholds: [0.0],
 };
 
-export const useLazyload = (onIntersectCallbck: Function, options = defaultOptions) => {
+
+export const useLazyload = (onIntersectCallback: Function, options = defaultOptions) => {
   const [element, setElement] = useState(null);
   const doIntersectCallback = useCallback(async ([entry], observer) => {
     if (entry.isIntersecting) {
       observer.unobserve(entry.target);
-      await onIntersectCallbck(entry, observer);
+      await onIntersectCallback(entry, observer);
       observer.observe(entry.target);
     }
   }, []);
@@ -25,9 +21,7 @@ export const useLazyload = (onIntersectCallbck: Function, options = defaultOptio
   useEffect(() => {
     let observer: any;
     if (element) {
-      observer = new IntersectionObserver(doIntersectCallback, {
-        ...options
-      });
+      observer = getObserver(doIntersectCallback, { ...options })
       observer.observe(element);
     }
     return () => observer && observer.disconnect();
