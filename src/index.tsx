@@ -9,15 +9,16 @@ interface IObserverOptions {
 const defaultOptions: IObserverOptions = {
   root: null,
   rootMargin: "0px",
-  thresholds: [0]
+  thresholds: [0.0],
 };
 
 export const useLazyload = (onIntersectCallbck: Function, options = defaultOptions) => {
   const [element, setElement] = useState(null);
-  const doIntersectCallback = useCallback(([entry], observer) => {
-    console.log(entry);
+  const doIntersectCallback = useCallback(async ([entry], observer) => {
     if (entry.isIntersecting) {
-      onIntersectCallbck(entry, observer);
+      observer.unobserve(entry.target);
+      await onIntersectCallbck(entry, observer);
+      observer.observe(entry.target);
     }
   }, []);
 
@@ -30,7 +31,7 @@ export const useLazyload = (onIntersectCallbck: Function, options = defaultOptio
       observer.observe(element);
     }
     return () => observer && observer.disconnect();
-  }, [element, options, onIntersectCallbck]);
+  }, [element, options.root, options.thresholds, options.rootMargin, doIntersectCallback]);
 
   return [element, setElement];
 };
