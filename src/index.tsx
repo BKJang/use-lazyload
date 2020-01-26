@@ -1,23 +1,13 @@
-import * as React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState<{
-    counter: number;
-  }>({
-    counter: 0
-  });
+interface IObserverOptions {
+  root: Element | null;
+  rootMargin: string;
+  thresholds: Array<number>;
+}
 
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++;
-      setState({ counter })
-    }, 1000)
-    return () => {
-      window.clearInterval(interval);
-    };
-  }, []);
-
-  return counter;
+const defaultOptions: IObserverOptions = {
+  root: null,
+  rootMargin: "0px",
+  thresholds: [0]
 };
